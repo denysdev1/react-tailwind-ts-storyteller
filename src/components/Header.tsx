@@ -1,22 +1,20 @@
 import { faCircleQuestion } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { useState } from "react";
 
-export const Header: React.FC = () => {
-  const [isOpen, setIsOpen] = useState(false);
+type Props = {
+  isSideBarOpen: boolean;
+  handleOpenSidebar: () => void;
+}
 
-  const handleClick = () => {
-    setIsOpen(!isOpen);
-  };
-
+export const Header: React.FC<Props> = ({ isSideBarOpen, handleOpenSidebar }) => {
   return (
-    <header className="bg-[#171A25] py-2 flex items-center justify-between px-3.5 md:pl-5 md:pr-[30px] md:py-2.5">
+    <header className="bg-dark-200 py-2 flex items-center justify-between px-3.5 md:pl-5 md:pr-[30px] md:py-2.5">
       <div className="flex items-center">
         <div
           className={`group flex flex-col space-y-1 mr-5 md:hidden cursor-pointer ${
-            isOpen ? "open" : ""
+            isSideBarOpen ? "open" : ""
           }`}
-          onClick={handleClick}
+          onClick={handleOpenSidebar}
         >
           <div className="h-0.5 w-6 bg-white group-[.open]:rotate-45 group-[.open]:translate-y-0.5 transition-transform duration-300"></div>
           <div className="h-0.5 w-6 bg-white group-[.open]:hidden transition duration-300"></div>
@@ -101,7 +99,7 @@ export const Header: React.FC = () => {
           size="lg"
           className="mr-3 md:h-6 md:mr-8"
         />
-        <div className="bg-[#103B8E] rounded-full p-1.5 px-2.5 md:text-xl text-white text-sm font-normal text-center cursor-pointer">
+        <div className="bg-[#103B8E] rounded-full p-1.5 px-2 md:text-xl text-white text-sm font-normal text-center cursor-pointer">
           RJ
         </div>
       </div>

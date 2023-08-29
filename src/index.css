@@ -1,3 +1,30 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  html {
+    font-family: "Euclid Circular B";
+  }
+}
+
+@font-face {
+  font-family: "Euclid Circular B";
+  src: url("/fonts/Euclid-Circular-B-Regular.ttf");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Euclid Circular B";
+  src: url("/fonts/Euclid-Circular-B-Medium.ttf");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Neutrif Pro";
+  src: url("/fonts/Euclid-Circular-B-Bold.ttf");
+  font-weight: 700;
+  font-style: normal;
+}
