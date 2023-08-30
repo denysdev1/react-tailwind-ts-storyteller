@@ -10,7 +10,7 @@ type Props = {
 
 export const Header: React.FC<Props> = ({ isSideBarOpen, toggleSidebar }) => {
   return (
-    <header className="bg-dark-200 py-2 flex items-center justify-between px-3.5 lg:pl-5 lg:pr-[30px] lg:py-2.5">
+    <header className="bg-dark-200 py-2 flex items-center justify-between px-3.5 lg:pl-5 lg:pr-[30px] lg:py-2.5 sticky top-0 z-30">
       <div className="flex items-center z-20">
         <MenuIcon isSideBarOpen={isSideBarOpen} toggleSidebar={toggleSidebar} />
         <Logo className="space-x-3 w-40 lg:w-80" />

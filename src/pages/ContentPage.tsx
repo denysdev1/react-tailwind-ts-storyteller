@@ -20,8 +20,8 @@ export const ContentPage: React.FC<Props> = ({ isSideBarOpen }) => {
   };
 
   return (
-    <main className="bg-dark-200 w-full lg:pb-[30px] lg:pr-[30px] overflow-hidden">
-      <div className="bg-[#F9F9F9] py-5 h-[calc(100vh-52px)] lg:h-[calc(100vh-90px)] lg:rounded-b-2xl">
+    <main className="bg-dark-200 w-full lg:pb-[30px] lg:pr-[30px] overflow-x-hidden">
+      <div className="bg-[#F9F9F9] py-5 lg:rounded-b-2xl">
         <div className="flex flex-col px-4 mb-[14px]">
           <div className="flex justify-between mb-6">
             <h1 className="font-bold text-3xl text-dark-200">Stories</h1>
