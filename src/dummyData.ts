@@ -1,4 +1,8 @@
-export const statuses = [
+import { Status } from "./types/Status";
+import { Story } from "./types/Story";
+import { Tab } from "./types/Tab";
+
+export const statuses: Status[] = [
   {
     title: "Draft",
     bgColor: "bg-[#1C62EB]",
@@ -17,7 +21,7 @@ export const statuses = [
   },
 ];
 
-export const stories = [
+export const stories: Story[] = [
   {
     id: 1,
     title: "Daily Horoscope (No publish date set)",
@@ -136,7 +140,7 @@ export const stories = [
   },
 ];
 
-export const tabs = [
+export const tabs: Tab[] = [
   { title: "Schedule", iconPath: "./icons/schedule.svg", type: "standard" },
   { title: "Analytics", iconPath: "./icons/analytics.svg", type: "standard" },
   { title: "Stories", iconPath: "./icons/stories1.svg", type: "standard" },

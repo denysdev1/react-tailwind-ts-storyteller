@@ -1,3 +1,4 @@
+import { FC } from "react";
 import { TabsList } from "./TabsList";
 
 type Props = {
@@ -5,7 +6,7 @@ type Props = {
   closeSidebar: () => void;
 };
 
-export const Sidebar: React.FC<Props> = ({ isSideBarOpen, closeSidebar }) => {
+export const Sidebar: FC<Props> = ({ isSideBarOpen, closeSidebar }) => {
   return (
     <nav
       className={`${

@@ -6,6 +6,11 @@
   html {
     font-family: "Euclid Circular B";
   }
+
+  select {
+    background: url(/images/chevron-bottom.webp) no-repeat 95% 60%;
+    background-size: 20px;
+  }
 }
 @layer components {
   .btn {

@@ -2,13 +2,14 @@ import { faCircleQuestion } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Logo } from "./icons/Logo";
 import { MenuIcon } from "./icons/MenuIcon";
+import { FC } from "react";
 
 type Props = {
   isSideBarOpen: boolean;
   toggleSidebar: () => void;
 };
 
-export const Header: React.FC<Props> = ({ isSideBarOpen, toggleSidebar }) => {
+export const Header: FC<Props> = ({ isSideBarOpen, toggleSidebar }) => {
   return (
     <header className="bg-dark-200 py-2 flex items-center justify-between px-3.5 lg:pl-5 lg:pr-[30px] lg:py-2.5 sticky top-0 z-30">
       <div className="flex items-center z-20">

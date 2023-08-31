@@ -1,17 +1,15 @@
+import { FC } from "react";
 import { tabs } from "../dummyData";
+import { Tab } from "../types/Tab";
 
 type Props = {
   isSelected: boolean;
   handleClick: (title: string) => void;
-  tab: {
-    title: string;
-    iconPath: string;
-    type: string;
-  };
+  tab: Tab;
   index: number;
 };
 
-export const TabItem: React.FC<Props> = ({
+export const TabItem: FC<Props> = ({
   isSelected,
   handleClick,
   tab,

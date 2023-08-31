@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { FC, useState } from "react";
 import { tabs } from "../dummyData";
 import { TabItem } from "./TabItem";
 
@@ -6,7 +6,7 @@ type Props = {
   closeSidebar: () => void;
 };
 
-export const TabsList: React.FC<Props> = ({ closeSidebar }) => {
+export const TabsList: FC<Props> = ({ closeSidebar }) => {
   const [selectedTab, setSelectedTab] = useState("Stories");
 
   const handleClick = (tabTitle: string) => {

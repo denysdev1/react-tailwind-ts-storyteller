@@ -1,9 +1,11 @@
+import { FC } from "react";
+
 type Props = {
   isSideBarOpen: boolean;
   toggleSidebar: () => void;
 };
 
-export const MenuIcon: React.FC<Props> = ({ isSideBarOpen, toggleSidebar }) => (
+export const MenuIcon: FC<Props> = ({ isSideBarOpen, toggleSidebar }) => (
   <div
     className={`group flex flex-col space-y-1 mr-5 lg:hidden cursor-pointer ${
       isSideBarOpen ? "open" : ""

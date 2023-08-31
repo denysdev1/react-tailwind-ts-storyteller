@@ -1,4 +1,6 @@
-export const Logo: React.FC<{ className: string }> = ({ className }) => (
+import { FC } from "react";
+
+export const Logo: FC<{ className: string }> = ({ className }) => (
   <div className={"flex items-center cursor-pointer " + className}>
     <svg
       xmlns="http://www.w3.org/2000/svg"
